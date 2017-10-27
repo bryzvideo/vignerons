@@ -63,7 +63,7 @@ Config.Jobs.vignerons = {
           db_name= "vinblanc",
           time   = 4000,
           max    = 100,
-          add    = 8,
+          add    = 3,
           remove = 1,
           requires = "raisin",
           requires_name = _U('raisin'),
@@ -73,7 +73,7 @@ Config.Jobs.vignerons = {
           name   = _U('m_vinrouge'),
           db_name= "vinrouge",
           max    = 100,
-          add    = 8,
+          add    = 3,
           drop   = 100
         },
         {
@@ -82,10 +82,10 @@ Config.Jobs.vignerons = {
           max    = 50,
           add    = 1,
           drop   = 5
-        }
+        },
       },
       Hint  = _U('m_raisin_button'),
-      GPS = {x = -1506, y = 137.07, z = 54.65}
+      GPS = {x = -1433.33, y = 208.43, z = 56.82}
     },
 
     VehicleSpawner = {
@@ -130,7 +130,7 @@ Config.Jobs.vignerons = {
     },
 
     Vinblanc = {
-      Pos   = {x = -1506, y = 137.07, z = 54.65},
+      Pos   = {x = -1433.33, y = 208.43, z = 56.82},
       Color = {r = 0, g = 0, b = 0},
       Size  = {x = 5.0, y = 5.0, z = 3.0},
       Marker= 1,
@@ -143,7 +143,7 @@ Config.Jobs.vignerons = {
           name   = _U('delivery'),
           time   = 500,
           remove = 1,
-          max    = 56, -- if not present, probably an error at itemQtty >= item.max in esx_jobs_sv.lua
+          max    = 100, -- if not present, probably an error at itemQtty >= item.max in esx_jobs_sv.lua
           price  = 70,
           requires = "vinblanc",
           requires_name = _U('m_vinblanc'),
@@ -169,7 +169,7 @@ Config.Jobs.vignerons = {
           name   = _U('delivery'),
           time   = 500,
           remove = 1,
-          max    = 42, -- if not present, probably an error at itemQtty >= item.max in esx_jobs_sv.lua
+          max    = 100, -- if not present, probably an error at itemQtty >= item.max in esx_jobs_sv.lua
           price  = 70,
           requires = "vinrouge",
           requires_name = _U('m_vinrouge'),
@@ -181,8 +181,7 @@ Config.Jobs.vignerons = {
     },
 
 
-
-    GrandCru = {
+    grandcru = {
       Pos   = {x = 248.88, y = 212.11, z = 105.28},
       Color = {r = 0, g = 0, b = 0},
       Size  = {x = 5.0, y = 5.0, z = 3.0},
@@ -199,13 +198,14 @@ Config.Jobs.vignerons = {
           remove = 1,
           max    = 50, -- if not present, probably an error at itemQtty >= item.max in esx_jobs_sv.lua
           price  = 500,
-          requires = "grandcrue",
+          requires = "grandcru",
           requires_name = _U('m_grand_crue'),
           drop   = 100
         }
       },
       Hint  = _U('m_deliver_grand_crue'),
       GPS = {x = -1782.62, y = 2326.24, z = 42.398}
-    }
-  }
+    },
+
+  },
 }
