@@ -1,7 +1,7 @@
 Locales['fr'] = {
   -- Vignerons
   ['raisin']                    = "raisin",
-  ['m_vignerons_locker']        = "entrprise de vignerons",
+  ['m_vignerons_locker']        = "entreprise de vignerons",
   ['m_raisin']                  = 'raisin',
   ['m_recoltraisin']            = 'appuyez sur ~INPUT_PICKUP~ pour récupérer des raisins.',
   ['m_raisin_smelting']         = 'Cave',
